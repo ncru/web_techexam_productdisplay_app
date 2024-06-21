@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- headers -->
+        <h1>Products Table</h1>
+        <div class="products-demo">
+            <p>PRODUCTS DEMO</p>
+        </div>
+        <!-- search -->
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search products...">
+            <button id="clear-button">Clear</button>
+        </div>
+        <!-- searching... -->
+        <div class="loading">Loading...</div>
+        <p id="return-none" class="hidden">No products matched your search keyword.</p>
+        <!-- the table -->
+        <table id="products-table">
+            <thead>
+                <tr>
+                    <th>Thumbnail</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="products"></tbody>
+        </table>
+        <!-- pagination buttons -->
+        <div class="pagination">
+            <button id="prev-button">Previous</button>
+            <button id="next-button">Next</button>
+        </div>
+    </div>
+    <!-- product preview (which is a modal) -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="product-title"></h2>
+            <p id="product-description"></p>
+            <p id="product-price"></p>
+            <div id="product-images">
+                <img id="main-image" src="" alt="">
+                <div id="tiled-images"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/scripts.js"></script>
+</body>
+
+</html>
