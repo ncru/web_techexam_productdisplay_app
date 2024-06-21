@@ -1,6 +1,7 @@
 # Product Display web application
 
-Simple web application using Python + Flask that displays products from [dummyjson](https://dummyjson.com/products).
+Simple web application using Python + Flask that  displays products from [dummyjson](https://dummyjson.com/products).  
+
 Applicant: Cruda, Kent Nicholson R.
 
 ## Installation
